@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/home\ bg\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.home h1 {
+    position: absolute;
+    top: 40px;
+    color: rgb(32, 114, 146);
+    -webkit-text-stroke: 2px black;
+    padding: 10px;
+    margin: 20px;
+    font-size: 64px;
+    background-color: rgb(144, 196, 255);
+    box-shadow: 
+      8px 0 0 0 black,
+      0 8px 0 0 black,
+      -8px 0 0 0 black,
+      0 -8px 0 0 black;
+}
+  
+.home h3 {
+    position: absolute;
+    top: 75%;
+    font-size: 24px;
+}
+  
+#start {
+    font-size: 24px;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: rgba(241, 33, 33, 0.842);
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+  
+.crow {
+    position: absolute;
+    top: 15%;
+}
+  
+#difficultyPopup {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: rgb(228, 190, 107);
+    padding: 35px;
+    padding-top: 40px;
+    box-shadow: 
+      4px 0 0 0 black,
+      0 4px 0 0 black,
+      -4px 0 0 0 black,
+      0 -4px 0 0 black;
+}
+  
+h2 {
+    font-size: 30px;
+}
+  
+.modeBtn {
+    background-color: rgb(90, 161, 189);
+    padding: 10px;
+    margin: 30px 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+.hidden {
+    display: none;
+}
+  
+#gameCanvas {
+    background-image: url(images/home\ bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+#pop-text {
+    font-size: 32px;
+    position: absolute;
+    top: 70px;
+    background-color: rgb(255, 67, 67);
+    padding: 20px;
+    box-shadow: 
+      4px 0 0 0 black,
+      0 4px 0 0 black,
+      -4px 0 0 0 black,
+      0 -4px 0 0 black;
+}
+  
+#win {
+    font-size: 32px;
+    position: absolute;
+    padding: 50px;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 87, 0, 1) 10%, rgba(255, 157, 0, 1) 20%, rgba(255, 169, 0, 1) 30%, rgba(251, 255, 0, 1) 40%, rgba(101, 255, 0, 1) 50%, rgba(0, 255, 109, 1) 60%, rgba(0, 255, 224, 1) 70%, rgba(0, 110, 255, 1) 80%, rgba(109, 0, 255, 1) 90%, rgba(203, 0, 255, 1) 100%);
+    box-shadow: 
+      4px 0 0 0 black,
+      0 4px 0 0 black,
+      -4px 0 0 0 black,
+      0 -4px 0 0 black;
+}
+  
+#gameOverPopup {
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.658);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 
+      4px 0 0 0 black,
+      0 4px 0 0 black,
+      -4px 0 0 0 black,
+      0 -4px 0 0 black;
+}
+
+.resetBtn, .backBtn {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 
+      2px 0 0 0 black,
+      0 2px 0 0 black,
+      -2px 0 0 0 black,
+      0 -2px 0 0 black;
+    cursor: pointer;
+}
+.backBtn {
+    width: 136px;
+}

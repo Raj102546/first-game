@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <title>Flappy Bird</title>
+</head>
+<body>
+  <div class="home">
+    <h1>Flappy Crow!!</h1>
+    <img src="images/crow.gif" class="crow">
+    <h3>Click Here To <button id="start">Start ></button></h3>
+  </div>
+  <div id="difficultyPopup" class="hidden">
+    <h2>Select Difficulty</h2>
+    <button class="modeBtn" onclick="startGame('easy')">Easy</button>
+    <button class="modeBtn" onclick="startGame('medium')">Medium</button>
+    <button class="modeBtn" onclick="startGame('hard')">Hard</button>
+  </div>
+  <canvas id="gameCanvas" class="hidden"></canvas>
+  <div id="gameOverPopup" class="hidden">
+    <h2 style="padding-bottom: 40px;">Game Over!</h2>
+    <button class="resetBtn" onclick="restartGame()">Restart</button>
+    <button class="backBtn" onclick="goBack()">Menu</button>
+  </div>
+  <p id="pop-text" class="hidden">If you move, you gay!</p>
+  <div id="win" class="hidden">Congratulations! You Won!</div>
+  <script src="app.js"></script>
+</body>
+</html>
