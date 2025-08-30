@@ -143,7 +143,7 @@ function startGame(difficulty) {
         bird.velocity = 0;
         pipes = [];
         frame = 0;
-        gameEnded = false;
+        gameEnded = true;
         gameOverPopup.classList.add("hidden");
         document.getElementById("win").classList.add("hidden");
     }
